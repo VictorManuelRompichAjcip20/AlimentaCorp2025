@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="VICTORAJCIP_SQLEXPRESS.TempAlimentaCorp"
+  DTS:DTSID="{C915CA5D-BDAD-451E-BE0D-BF08EEDEBC7F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=VICTORAJCIP\SQLEXPRESS;Initial Catalog=TempAlimentaCorp;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-ProyectDB-{C915CA5D-BDAD-451E-BE0D-BF08EEDEBC7F}VICTORAJCIP\SQLEXPRESS.TempAlimentaCorp;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
