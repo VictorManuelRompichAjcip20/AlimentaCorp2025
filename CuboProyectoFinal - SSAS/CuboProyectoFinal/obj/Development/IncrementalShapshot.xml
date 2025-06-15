@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CuboProyectoFinal</Database>
+    <Server>VictorAjcip\SQLDEV</Server>
+    <ConnectionString>Data Source=VictorAjcip\SQLDEV;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>/SeANqhmrrkbZjBdPpSuX7y/2VQ=4/6/2025 09:50:19:p. m.4/6/2025 09:50:19:p. m.</TimeStamp>
+        <ID>
+          <String>AlimentaCorpDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>/md9k4VfJ++ruBCPOt6454MF+Bo=4/6/2025 09:50:41:p. m.4/6/2025 09:50:41:p. m.</TimeStamp>
+        <ID>
+          <String>AlimentaCorpDWView</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XXcKBVn4AvO9tIPUKS9uT/u5f2E=4/6/2025 09:51:32:p. m.4/6/2025 09:51:32:p. m.</TimeStamp>
+        <ID>
+          <String>DimCliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zyymi5COR6rtal/cEPS9H6ZWuH4=4/6/2025 09:51:53:p. m.4/6/2025 09:51:53:p. m.</TimeStamp>
+        <ID>
+          <String>DimProducto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LMZUl+kihPxw+8OtmI0sqqppjlI=4/6/2025 09:52:11:p. m.4/6/2025 09:52:11:p. m.</TimeStamp>
+        <ID>
+          <String>DimProveedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cCnIuCNPES4KuhR2Z7DeYxcx4MY=4/6/2025 09:52:54:p. m.4/6/2025 09:52:54:p. m.</TimeStamp>
+        <ID>
+          <String>DimSucursal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>175RPW5HEJvBrX/Jt4+IiCz8hiA=4/6/2025 09:54:02:p. m.4/6/2025 09:54:01:p. m.</TimeStamp>
+        <ID>
+          <String>DimTiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CKf/8+Hwjl4hOcRli6tgFB498nc=5/6/2025 11:46:16:p. m.5/6/2025 11:46:16:p. m.</TimeStamp>
+        <ID>
+          <String>DimVendedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>v0aji9g7aNgkH/lQMEFsUHm/7C0=13/6/2025 11:59:07:p. m.5/6/2025 11:46:56:p. m.401UFWbC/te46B2PUhZg3rAbq4g=13/6/2025 11:59:07:p. m.5/6/2025 11:46:56:p. m.</TimeStamp>
+        <ID>
+          <String>AlimentaCorpDWCube2025</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>kW6ruzwHis+H8QuMj7v+95hnbTQ=6/6/2025 12:25:29:a. m.4/6/2025 09:48:51:p. m.</TimeStamp>
+      <ID>
+        <String>CuboProyectoFinal</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-06-14T06:23:30.486667Z</LastDeployed>
+</DeploymentSnapshot>

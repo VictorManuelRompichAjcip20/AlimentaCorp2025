@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <Timeout>30</Timeout>
+      <DataSourceReference>ConnectionAnalysisServices</DataSourceReference>
+      <CommandText>SELECT 
+    {[Measures].[Total - Fact Ventas], [Measures].[Unidades - Fact Ventas]} ON COLUMNS,
+    NON EMPTY [DimSucursal].[Nombre].[Nombre].MEMBERS ON ROWS
+FROM [AlimentaCorpDWCube2025]</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>MDX</CommandType>
+          <Type>Query</Type>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimSucursal</DimensionName>
+                    <HierarchyName>Nombre</HierarchyName>
+                    <HierarchyUniqueName>[DimSucursal].[Nombre]</HierarchyUniqueName>
+                    <LevelName>Nombre</LevelName>
+                    <UniqueName>[DimSucursal].[Nombre].[Nombre]</UniqueName>
+                  </ID>
+                  <ItemCaption>Nombre</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total - Fact Ventas</MeasureName>
+                    <UniqueName>[Measures].[Total - Fact Ventas]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total - Fact Ventas</ItemCaption>
+                  <FormattedValue>true</FormattedValue>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Unidades - Fact Ventas</MeasureName>
+                    <UniqueName>[Measures].[Unidades - Fact Ventas]</UniqueName>
+                  </ID>
+                  <ItemCaption>Unidades - Fact Ventas</ItemCaption>
+                  <FormattedValue>true</FormattedValue>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>AlimentaCorpDWCube2025</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties />
+          </QuerySpecification>
+          <Query>
+            <Statement>SELECT 
+    {[Measures].[Total - Fact Ventas], [Measures].[Unidades - Fact Ventas]} ON COLUMNS,
+    NON EMPTY [DimSucursal].[Nombre].[Nombre].MEMBERS ON ROWS
+FROM [AlimentaCorpDWCube2025]</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Nombre">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimSucursal].[Nombre].[Nombre]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Total___Fact_Ventas">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Measure" UniqueName="[Measures].[Total - Fact Ventas]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Unidades___Fact_Ventas">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Measure" UniqueName="[Measures].[Unidades - Fact Ventas]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
